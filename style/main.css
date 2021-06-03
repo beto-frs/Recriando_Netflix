@@ -1,0 +1,174 @@
+:root {
+    --vermelho: #E50914;
+    --preto: #141414;
+    --preto_logo: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* elementos base */
+
+body {
+    background-color: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+#headerPopup{
+    width:75%;
+    margin:0 auto;
+  }
+  
+  #headerPopup iframe{
+    width:100%;
+    margin:0 auto;
+  }
+
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /*background-color: black;*/
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+header .logo_square {
+    /*background-color: var(--preto);*/
+    margin: 15px;
+    margin-left: 20px;
+}
+
+header .logo {
+    margin-left: 5px;
+    /*color: var(--preto);*/
+    font-family: 'final';
+    font-size: 35px;
+}
+
+header nav {
+    margin: 10px 10px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    font-family: 'Trebuchet MS';
+}
+
+header nav a:hover {
+    border-bottom: 2px solid var(--preto_logo);
+}
+
+/* filme-principal */
+
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%),
+    url('../img/capa2.jpg');
+
+    height: 600px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-bottom: 3.75rem;
+    font-family: 'Segoe UI',sans-serif;
+    font-size: 1.125rem;
+}
+
+.filme-principal .titulo {
+    margin-top: 15%;
+    margin-bottom: 0.625rem;
+    font-size: 2.5rem;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+/* botões do corpo da página */
+
+.botao {
+    background-color: rgba(0, 0, 0, .30);
+    border: none;
+    color: white;
+    font-weight: bold;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 14px;
+    border-radius: 20px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+    user-select: none;
+}
+
+.botao:hover {
+    color: black;
+    background: rgba(255, 255, 255, .30);
+    transition: background color 1s;
+    font-weight: bold;
+    border: none;
+    user-select: none;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+/* Fim dos tratativos dos botões */
+
+.container {
+    margin-left: 20px;
+    margin-right: 10px
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+/* Carrossel da parte inferior da página */
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-color: rgba(255, 255, 255, .50);
+}
+
+.carrossel-filmes {
+    margin-top: 5px;
+}
+
+/* Estrutura do Rodapé */
+
+footer .container {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer .container .rodape {
+    font-size: 22px;
+    font-family: 'Trebuchet MS';
+}
+
+.rodape a {
+    align-items: center;
+    text-align: center;
+    padding-right: 30px;
+    color: white;
+}
